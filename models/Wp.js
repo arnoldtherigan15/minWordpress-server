@@ -10,7 +10,8 @@ let wpSchema = new Schema({
         type:  Schema.Types.ObjectId,
         ref:'users'
     },
-    author : String
+    author : String,
+    featured_image: String
 },{timestamps:true})
 
 let Wp = mongoose.model('Wp',wpSchema)

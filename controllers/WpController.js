@@ -16,8 +16,8 @@ class WpController {
         .catch(next)
     }
     static create(req, res, next){
-        let {title,content} = req.body
-        Wp.create({title,content,user:req.loggedUser._id,author:req.loggedUser.username})
+        let {title,content,featured_image} = req.body
+        Wp.create({title,content,user:req.loggedUser._id,author:req.loggedUser.username,featured_image})
         .then(data=>{
             console.log(data,'ini loh');
             

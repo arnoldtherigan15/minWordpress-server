@@ -37,6 +37,8 @@ class UserController {
         console.log('masukkkkk gugel');
 
         const client = new OAuth2Client(process.env.CLIENT_ID);
+        console.log(client);
+        
         let username 
         let email
         client.verifyIdToken({
